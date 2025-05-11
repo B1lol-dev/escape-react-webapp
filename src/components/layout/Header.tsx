@@ -1,10 +1,15 @@
-import { v4 as uuidv4 } from "uuid";
-import { Container } from "../helpers/Container";
-import { Link } from "react-router-dom";
+// hooks
 import { useEffect, useState } from "react";
 
+// utils
+import { v4 as uuidv4 } from "uuid";
+
+// components
+import { Container } from "../helpers/Container";
+import { Link } from "react-router-dom";
+
 export const Header = ({ className }: { className?: string }) => {
-  const navLinks: string[] = ["home", "Categories", "about", "contact"];
+  const navLinks: string[] = ["home", "categories", "about", "contact"];
 
   const [isScrolled, setIsScrolled] = useState(false);
 

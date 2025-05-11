@@ -1,11 +1,20 @@
+// hooks
+import { useEffect, useState } from "react";
+
+// constants
+import { API_ENPOINTS, API_URL } from "../../../constants/api";
+
+// utils
+import axios from "axios";
+
+// components
+import toast, { Toaster } from "react-hot-toast";
 import { Container } from "../../../components/helpers/Container";
 import { PostsTitle } from "./common/PostsTitle";
 import { FeaturedPost } from "./common/FeaturedPost";
-import { useEffect, useState } from "react";
-import { API_ENPOINTS, API_URL } from "../../../constants/api";
-import toast, { Toaster } from "react-hot-toast";
-import axios from "axios";
 import { Loader } from "../../../components/common/Loader";
+
+// types
 import type { IPost } from "../../../constants/interfaces";
 
 export const FeaturedPosts = () => {

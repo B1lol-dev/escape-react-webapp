@@ -1,10 +1,15 @@
+// hooks
 import { useEffect, useState } from "react";
+
+// components
 import { Container } from "../../../components/helpers/Container";
-import axios from "axios";
 import { API_ENPOINTS, API_URL } from "../../../constants/api";
 import toast, { Toaster } from "react-hot-toast";
-import { v4 as uuidv4 } from "uuid";
 import { Link } from "react-router";
+
+// utils
+import axios from "axios";
+import { v4 as uuidv4 } from "uuid";
 
 export const Categories = () => {
   const [categories, setCategories] = useState([]);

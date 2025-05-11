@@ -1,7 +1,16 @@
+// hooks
 import { useEffect, useState } from "react";
+
+// types
 import type { IPost, IUser } from "../../../../constants/interfaces";
+
+// utils
 import axios from "axios";
+
+// constants
 import { API_URL } from "../../../../constants/api";
+
+// components
 import { Link } from "react-router-dom";
 
 export const RecentPost = ({ data }: { data: IPost }) => {

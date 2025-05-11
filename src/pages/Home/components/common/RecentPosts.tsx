@@ -1,12 +1,21 @@
+// hooks
 import { useEffect, useState } from "react";
-import { Container } from "../../../../components/helpers/Container";
-import { PostsTitle } from "./PostsTitle";
+
+// utils
 import axios from "axios";
+
+// constants
 import { API_ENPOINTS, API_URL } from "../../../../constants/api";
-import toast, { Toaster } from "react-hot-toast";
+
+// types
 import type { IPost } from "../../../../constants/interfaces";
+
+// components
+import toast, { Toaster } from "react-hot-toast";
 import { Loader } from "../../../../components/common/Loader";
 import { RecentPost } from "./RecentPost";
+import { PostsTitle } from "./PostsTitle";
+import { Container } from "../../../../components/helpers/Container";
 
 export const RecentPosts = () => {
   const [posts, setPosts] = useState([]);

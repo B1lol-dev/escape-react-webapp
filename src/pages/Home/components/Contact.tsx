@@ -1,8 +1,13 @@
+// hooks
 import { useState } from "react";
-import landscape_img from "../assets/Contact/landscape_img.png";
+
+// components
 import toast, { Toaster } from "react-hot-toast";
 import { PostsTitle } from "./common/PostsTitle";
 import { Footer } from "../../../components/layout/Footer";
+
+// assets
+import landscape_img from "../assets/Contact/landscape_img.png";
 
 export const Contact = () => {
   const [email, setEmail] = useState("");

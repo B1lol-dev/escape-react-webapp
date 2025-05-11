@@ -1,8 +1,17 @@
-import { Link } from "react-router-dom";
-import type { IPost, IUser } from "../../../../constants/interfaces";
-import { useEffect, useState } from "react";
+// utils
 import axios from "axios";
+
+// constants
 import { API_URL } from "../../../../constants/api";
+
+// hooks
+import { useEffect, useState } from "react";
+
+// types
+import type { IPost, IUser } from "../../../../constants/interfaces";
+
+// components
+import { Link } from "react-router-dom";
 
 interface IFeaturedPostProps {
   data: IPost;
