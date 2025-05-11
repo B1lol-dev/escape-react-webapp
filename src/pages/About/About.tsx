@@ -16,8 +16,19 @@ const About = () => {
         <p className="text-center text-lg text-[#768088]">
           Learn more about our journey
         </p>
+        <h1 className="text-2xl font-bold text-center mt-8">Our Story</h1>
+        <ul className="mt-6 space-y-4 text-[#768088]">
+          <li>
+            Founded in 2020, we started as a small team with a big vision.
+          </li>
+          <li>
+            Our mission is to provide exceptional services to our customers.
+          </li>
+          <li>We believe in innovation, collaboration, and integrity.</li>
+          <li>Join us on our journey to make a difference in the world.</li>
+        </ul>
       </div>
-      <Footer />
+      <Footer className="mt-60" />
     </>
   );
 };
