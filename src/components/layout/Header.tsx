@@ -3,7 +3,7 @@ import { Container } from "../helpers/Container";
 import { Link } from "react-router-dom";
 import { useEffect, useState } from "react";
 
-export const Header = () => {
+export const Header = ({ className }: { className?: string }) => {
   const navLinks: string[] = ["home", "Categories", "about", "contact"];
 
   const [isScrolled, setIsScrolled] = useState(false);
@@ -23,7 +23,7 @@ export const Header = () => {
     <header
       className={`fixed z-10 w-full py-5 duration-200 ${
         isScrolled ? "bg-white *:*:text-es-black" : ""
-      }`}
+      } ${className}`}
     >
       <Container>
         <nav className="flex items-center justify-between text-white">

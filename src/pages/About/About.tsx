@@ -1,7 +1,7 @@
 import { Header } from "../../components/layout/Header";
 import { Footer } from "../../components/layout/Footer";
 
-const About = () => {
+export const About = () => {
   return (
     <>
       <Header />
@@ -32,5 +32,3 @@ const About = () => {
     </>
   );
 };
-
-export default About;
