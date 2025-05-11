@@ -1,54 +1,54 @@
-# React + TypeScript + Vite
+# Escape WebApp
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Escape WebApp is a modern web application built with cutting-edge technologies to deliver a seamless user experience. It is developed using TypeScript, React, and Vite, styled with TailwindCSS, and includes additional libraries for enhanced functionality.
 
-Currently, two official plugins are available:
+## Tech Stack
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- **Vite**: Fast and modern build tool.
+- **React**: Component-based UI library.
+- **TailwindCSS**: Utility-first CSS framework.
+- **React-Hot-Toast**: For beautiful toast notifications.
+- **UUID**: For generating unique identifiers.
+- **Axios**: For making HTTP requests.
+- **React-Router-Dom**: For client-side routing.
 
-## Expanding the ESLint configuration
+## Pages
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+- **Home**: The main landing page of the application.
+- **About**: A page providing information about the application.
+- **404**: A custom page for handling non-existent routes.
 
-```js
-export default tseslint.config({
-  extends: [
-    // Remove ...tseslint.configs.recommended and replace with this
-    ...tseslint.configs.recommendedTypeChecked,
-    // Alternatively, use this for stricter rules
-    ...tseslint.configs.strictTypeChecked,
-    // Optionally, add this for stylistic rules
-    ...tseslint.configs.stylisticTypeChecked,
-  ],
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
+## Features
+
+- **Working Contact Form**: A fully functional contact form for user inquiries.
+- **Dynamic Blog Posts**: All blog posts are fetched dynamically from the [DummyJSON API](https://dummyjson.com).
+
+## Getting Started
+
+1. Clone the repository:
+
+```bash
+git clone https://github.com/B1lol-dev/escape-react-webapp.git
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+2. Navigate to the project directory:
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default tseslint.config({
-  plugins: {
-    // Add the react-x and react-dom plugins
-    'react-x': reactX,
-    'react-dom': reactDom,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended typescript rules
-    ...reactX.configs['recommended-typescript'].rules,
-    ...reactDom.configs.recommended.rules,
-  },
-})
+```bash
+cd escape-reatc-webapp
 ```
+
+3. Install dependencies:
+
+```bash
+npm install
+```
+
+4. Start the development server:
+
+```bash
+npm run dev
+```
+
+## License
+
+This project is licensed under the [MIT License](LICENSE)
