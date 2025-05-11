@@ -7,4 +7,7 @@ button {
 @theme {
   --color-es-orange: #dd783f;
   --color-es-gray: #768088;
+  --color-es-gray-sc: #dedede;
+  --color-es-light-gray: #f7f7f7;
+  --color-es-black: #2e2e2e;
 }

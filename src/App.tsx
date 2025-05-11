@@ -1,6 +1,12 @@
 // components
+import About from "./pages/About/About";
 import { Home } from "./pages/Home/Home";
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import {
+  BrowserRouter as Router,
+  Routes,
+  Route,
+  Navigate,
+} from "react-router-dom";
 
 function App() {
   return (
@@ -8,6 +14,8 @@ function App() {
       <Router>
         <Routes>
           <Route path="/" element={<Home />} />
+          <Route path="/home" element={<Navigate to="/" />} />
+          <Route path="/about" element={<About />} />
         </Routes>
       </Router>
     </>

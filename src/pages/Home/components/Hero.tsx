@@ -11,7 +11,9 @@ export const Hero = () => {
       style={{ backgroundImage: `url(${hero_bg_img})` }}
     >
       <Container className="flex items-center flex-col">
-        <h1 className="text-white text-[50px]">Let's do it together.</h1>
+        <h1 className="text-white font-serif text-[50px]">
+          Let's do it together.
+        </h1>
         <p className="text-[#FFFFFFA1] text-[17px] mt-5">
           We travel the world in search of stories. Come along for the ride.
         </p>

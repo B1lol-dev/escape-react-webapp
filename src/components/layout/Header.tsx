@@ -1,22 +1,41 @@
 import { v4 as uuidv4 } from "uuid";
 import { Container } from "../helpers/Container";
+import { Link } from "react-router-dom";
+import { useEffect, useState } from "react";
 
 export const Header = () => {
   const navLinks: string[] = ["home", "Categories", "about", "contact"];
 
+  const [isScrolled, setIsScrolled] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      setIsScrolled(window.scrollY > 0);
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+
   return (
-    <header className="fixed w-full py-5">
+    <header
+      className={`fixed z-10 w-full py-5 duration-200 ${
+        isScrolled ? "bg-white *:*:text-es-black" : ""
+      }`}
+    >
       <Container>
         <nav className="flex items-center justify-between text-white">
-          <a href="/" className="text-[26px]">
+          <Link to="/" className="text-[26px]">
             <h1>Escape</h1>
-          </a>
+          </Link>
 
           <ul className="flex gap-10">
             {navLinks.map((link) => (
-              <li className="" key={uuidv4()}>
-                {link}
-              </li>
+              <Link to={`/${link}`} key={uuidv4()}>
+                <li className="">{link}</li>
+              </Link>
             ))}
           </ul>
         </nav>

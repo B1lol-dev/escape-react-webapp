@@ -10,9 +10,7 @@ export const Container = ({
   className,
 }: IContainerProps): JSX.Element => {
   return (
-    <div
-      className={`container max-w-[930px] w-full mx-auto px-[10px] ${className}`}
-    >
+    <div className={`container max-w-7xl w-full mx-auto px-4 ${className}`}>
       {children}
     </div>
   );
